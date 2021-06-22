@@ -6,20 +6,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trybewarts</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
   <!-- *header -->
-  <header class="header">
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="" />
-    <h1 id='trybewarts-header-title'>Trybewarts</h1>
-    <form action="" method="GET" class="trybewarts-login">
-      <input type="text" name="login-email" placeholder="Login" id="email" />
-      <input type="text" name="password" placeholder="Senha" id="password" />
-      <button id="button">Entrar</button>
-    </form>
-  </header>
+  <nav class="navbar is-small is-primary is-flex-direction-row is-justify-content-space-evenly is-align-items-center">
+      <div class="navbar-brand">
+        <figure class="image is-128x128">
+          <img class="image" src="images/trybewarts-header-logo.svg" alt="Logo on Header" />
+        </figure>
+      </div>
+      <div>
+        <h1 id='trybewarts-header-title' class="title">Trybewarts</h1>
+      </div>
+      <div class="is-flex-direction-row is-justify-content-space-evenly">
+        <div class="field is-horizontal">
+          <div class="field-label">
+            <label class="label" for="">Email</label>
+          </div>
+          <div class="field-body">
+            <div class="field">
+              <div class="control">
+                <input class="input is-small" type="text" name="login-email" placeholder="Login" id="email" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="field is-horizontal">
+          <div class="field-label">
+            <label class="label" for="">Senha</label>
+          </div>
+          <div class="control">
+            <input class="input is-small" type="text" name="password" placeholder="Senha" id="password" />
+          </div>
+          <div class="control">
+            <button class="button is-small">Entrar</button>
+          </div>
+        </div>
+      </div>
+
+  </nav>
   <main>
     <form action="" method="get" id='evaluation-form'>
       <div>
